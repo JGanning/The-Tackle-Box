@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+.header {
+    position: relative;
+    height: 8vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.header ul {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header li {
+    display: inline;
+    border-left: solid 1px black;
+    padding:10px;
+}
+
+.header-logo {
+    height: 30vh;
+}
+
+.about {
+    border-right: solid 1px black;
+}
