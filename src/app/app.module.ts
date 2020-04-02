@@ -6,14 +6,20 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { CreateArticleComponent } from './create-article/create-article.component';
+import { ArticleComponent } from './article/article.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateArticleComponent,
+    ArticleComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     RouterModule,
     AppRoutingModule
